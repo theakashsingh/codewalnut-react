@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const POKEAPI_BASE_URL = 'https://pokeapi.co/api/v2';
+const POKEAPI_BASE_URL = import.meta.env.VITE_POKEMON_BASE_API;
 
 export interface PokemonBasicInfo {
   id: number;
